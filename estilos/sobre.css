@@ -1,0 +1,29 @@
+html, body{
+    background-color: darkgray;
+}
+
+main{
+    max-width: 600px;
+    margin: auto;
+    background-color: darkgray;
+}
+
+article{
+    padding: 10px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+}
+
+article>h1{
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+article>p{
+    padding: 10px;
+    text-indent: 1.5em;
+    line-height: 1.6em;
+    text-align: justify;
+}

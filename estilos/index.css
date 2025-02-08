@@ -1,0 +1,384 @@
+
+main {
+    background-color: darkgray;
+}
+
+section.section-produtos{
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.500);
+    
+}
+
+section.section-produtos>h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 2.2em;
+    padding-top: 15px;
+}
+
+section.section-produtos>p{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 2.2em;
+    padding-bottom: 15px;
+}
+
+div.produtos{
+    padding: 0px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-evenly;
+}
+
+div.produtos>div.produto{
+    width: 90%;
+    margin: 0px auto 25px auto;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.700);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+div.produtos>div.produto>h3{
+    font-family: cursive;
+    font-size: 1.5em;
+    padding-top: 5px;
+}
+
+div.produtos>div.produto>p{
+    font-family: cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+div.imagem{
+    background-color: red;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+div.produtos>div.produto>a{
+    color: var(--gold1);
+    font-family: cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+div.produtos>div.produto>a:hover{
+    color: var(--gold2);
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+
+div.iproduto1{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.24\(1\).jpeg);}
+div.iproduto2{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.24\(2\).jpeg);}
+div.iproduto3{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.24\(3\).jpeg);}
+div.iproduto4{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.25.jpeg);}
+div.iproduto5{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.25\(1\).jpeg);}
+div.iproduto6{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.25\(2\).jpeg); background-position: right center;}
+
+article.credibilidade{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+
+}
+
+article.credibilidade>h2{
+    font-size: 1.4em;
+    padding: 15px;
+}
+
+div.cred-info{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0px auto 20px auto;
+    width: 80%;
+}
+
+div.cred-info>div.center{
+    display: flex;
+    justify-content: center;
+}font
+
+div.cred-info>div.center>h3, div.cred-info>div.center>i{
+    margin: 0px 5px;
+}
+
+div.cred-info>p{
+    padding: 15px;
+}
+
+div.cred-info>a{
+    color: black;
+}
+
+div.imagem-cred{
+    width: 100%;
+    height: 200px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.700);
+    background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.25\(3\).jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 20px 0px;
+}
+
+section.info{
+    background-color: lightgray;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+}
+
+div.info-item{
+
+    background-color: black;
+    border: 3px solid black;
+    width: 85vw;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.500);
+}
+
+div.ifit2, div.ifit4{
+    flex-direction: row-reverse;
+}
+
+div.info-item h3{
+    color: var(--gold1);
+    margin: 0px 15px;
+    font-size: 1em;
+}
+
+div.info-item p{
+    color: white;
+    margin: 0px 20px;
+}
+
+div.info-container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+div.info-container>h3{
+    padding: 5px;
+}
+
+div.info-container>p{
+    padding: 5px;
+}
+
+div.imagem-info{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.img-info1{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-29\ at\ 17.28.09.jpeg);}
+div.img-info2{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-29\ at\ 17.28.08.jpeg);}
+div.img-info3{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-29\ at\ 17.28.14.jpeg);}
+div.img-info4{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-29\ at\ 17.28.10.jpeg);}
+
+article.cta{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.27\(2\).jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cta-mask{
+    background-color: rgba(0, 0, 0, 0.700);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cta-mask>h2, .cta-mask>p{
+    margin: 5px 0px;
+}
+
+.cta-mask>div.container-botao{
+    margin: 8px 0px;
+}
+
+div#obs{
+    background-color: white;
+}
+
+div#obs>ul{
+    list-style-position: inside;
+    padding: 15px;
+}
+div#obs>ul>p{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+
+
+div#obs>ul>li{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+div#obs>ul>li>a{
+    color: blue;
+}
+
+div#obs>ul>li>a:hover{
+    color: darkblue;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.produtos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    article.credibilidade{
+    }
+    
+    article.credibilidade>h2{
+        font-size: 1.6em;
+    }
+    
+    div.cred-info{
+        width: 600px;
+    } 
+
+    section.info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0px 20px 40px 20px;
+    }
+
+    div.info-item{
+        width: 90%;
+        margin: 40px auto 0px auto;
+    }
+
+    div.ifit2, div.ifit4{
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+ 
+
+    header>div.header>h1{
+        font-size: 3em;
+    }
+    
+    header>div.header>h2{
+        font-size: 2.3em;
+        padding: 15px;
+    }
+
+    html, body{
+        background-color: darkgray;
+    }
+
+    main{
+        max-width: 1000px;
+        margin: auto;
+    }
+
+   
+
+    section.section-produtos>h2{
+        font-size: 2.5em;
+    }
+
+    div.produtos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    article.credibilidade>h2{
+        font-size: 1.6em;
+    }
+
+    .cred-container{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    div.cred-info{
+        width: 500px;
+        margin: 0px 20px
+    } 
+
+    section.info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0px 20px 40px 20px;
+    }
+
+    div.info-item{
+        width: 90%;
+        margin: 40px auto 0px auto;
+    }
+
+    div.ifit2, div.ifit4{
+        flex-direction: row;
+    }
+}

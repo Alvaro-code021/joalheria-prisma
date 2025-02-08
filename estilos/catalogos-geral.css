@@ -1,0 +1,85 @@
+html, body{
+    background-color: darkgray;
+}
+
+nav{
+    background-color: white;
+}
+
+ul{
+    padding: 10px 5px;
+    max-width: 620px;
+    margin: auto;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "anel brinco colar relogio"
+    "broche pulseira pulseira kit"
+    ;
+}
+
+#anel{grid-area: anel;}
+#brinco{grid-area: brinco;}
+#colar{grid-area: colar;}
+#relogio{grid-area: relogio;}
+#broche{grid-area: broche;}
+#pulseira{grid-area: pulseira;}
+#kit{grid-area: kit;}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--gold1);
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color: var(--gold2);
+    box-shadow: 0px 0px 3px white;
+    transform: scale(1.1);
+    transition: .25s ease;
+}
+
+nav li#pulseira a:hover{
+    transform: scale(1.05);
+}
+
+#clicado{
+    box-shadow: 0px 0px 3px black;
+}
+
+#clicado:hover{
+    background-color: var(--gold1);
+    transform: scale(1);
+}
+
+nav i{
+    padding-top: 3px;
+}
+
+
+
+main{
+    margin: auto;
+    background-color: darkgray;
+    max-width: 600px;
+}
+
+@media screen and (min-width:600px){
+    nav{
+        background-color: darkgray;
+    }
+
+    hr{
+        display: none;
+    }
+}

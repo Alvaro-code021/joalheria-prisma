@@ -1,0 +1,342 @@
+html, body{
+    background-color: darkgray;
+}
+
+
+main{
+    background-color: white;
+    padding: 15px;
+    max-width: 992px;
+    margin: 0px auto;
+}
+
+
+
+
+.container-carrossel {
+    position: relative; /* Posiciona o item em relação ao seu contêiner */
+    margin: 30px auto 0px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black;
+    max-width: 100%;
+}
+
+.canel {
+    height: 300px;
+    display: flex;
+    overflow-x: auto; /* Permite o scroll horizontal */
+    scroll-snap-type: x mandatory; /* Habilita o "snap" (travamento) ao fazer scroll horizontal */
+    scroll-behavior: smooth; /* Anima o scroll horizontal para ser suave */
+    -ms-overflow-style: none; /* Oculta a barra de rolagem no Internet Explorer e Edge */
+    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+}
+
+.canel.largo{
+    height: 380px;
+}
+
+.canel::-webkit-scrollbar {
+    display: none;
+}
+
+.canel article{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    overflow-y: hidden;
+    flex-shrink: 0; /* Define a capacidade do item de encolher se não houver espaço suficiente no contêiner. */
+    flex-basis: 100%; /* Define o tamanho inicial do item antes que ele seja sujeito ao crescimento ou encolhimento. */
+    scroll-snap-align: start; /* Faz com que a imagem se alinhe com o início do container durante o scroll */
+}
+
+.canel h1, .canel p, .carrossel-menu a{
+    font-family: cursive;
+}
+
+.canel h1{
+    font-size: 1.6em;
+    padding-top: 5px;
+}
+
+.canel p{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+div.imagem{
+    background-color: red;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 25px);
+    margin: 0px auto;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 55px;
+}
+
+div.imagem.largo{
+    height: 280px;
+}
+
+div.ianel1{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.24\(1\).jpeg);}
+div.ianel2{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.24\(2\).jpeg);}
+div.ianel3{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.24\(3\).jpeg);}
+div.ianel4{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.25.jpeg);}
+div.ianel5{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.25\(1\).jpeg);}
+div.ianel6{background-image: url(../imagens/WhatsApp\ Image\ 2024-12-28\ at\ 23.24.25\(2\).jpeg); background-position: right center;}
+
+
+div.i2anel1{background-image: url(../imagens/Untitled.jpeg);}
+div.i2anel2{background-image: url(../imagens/Untitled2.jpeg);}
+div.i2anel3{background-image: url(../imagens/Untitled3\(1\).jpeg);}
+div.i2anel4{background-image: url(../imagens/Untitled4.jpeg);}
+div.i2anel5{background-image: url(../imagens/Untitled5.jpeg);}
+div.i2anel6{background-image: url(../imagens/Untitled6.jpeg);}
+div.i2anel7{background-image: url(../imagens/Untitled7.jpeg);}
+div.i2anel8{background-image: url(../imagens/Untitled8.jpeg);}
+
+
+.canel .menu-desc p{
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 10px 20px 25px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.canel .menu-comprar{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+}
+
+.canel .menu-comprar h1{
+    grid-column: span 2;
+}
+
+.canel .menu-comprar p{
+    font-size: 1.4em;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.canel .menu-desc, .canel .menu-comprar{
+    overflow-y: auto;
+}
+
+.carrossel-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Posiciona a navegação de forma relativa em relação ao container */
+    bottom: 0px; /* Coloca a navegação 10px abaixo da parte inferior do container */
+    text-align: center;
+}
+
+.carrossel-menu a{
+    width: 100px;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px 8px;
+    border: 1px solid black;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.carrossel-menu a:hover{
+    background-color: white;
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* cores variadas */
+
+/* dourado */
+
+.canel.cor-dourado article, .carrossel-menu.cor-dourado{
+    background-color: rgb(255, 234, 118);
+    color: black;
+}
+
+.canel.cor-dourado article.menu-desc p, .canel.cor-dourado article.menu-comprar p, .carrossel-menu.cor-dourado a{
+    background-color: white;
+}
+
+.canel.cor-dourado .menu-desc p, .canel.cor-dourado .menu-comprar p, .imagem.cor-dourado{
+    border: 2.5px solid black;
+}
+
+/* azul */
+
+.canel.cor-azul article, .carrossel-menu.cor-azul{
+    background-color: rgb(162, 196, 255);
+    color: black;
+}
+
+.canel.cor-azul article.menu-desc p, .canel.cor-azul article.menu-comprar p, .carrossel-menu.cor-azul a{
+    background-color: white;
+}
+
+.canel.cor-azul .menu-desc p, .canel.cor-azul .menu-comprar p, .imagem.cor-azul{
+    border: 2.5px solid black;
+}
+
+/* vermelho */
+
+.canel.cor-vermelho article, .carrossel-menu.cor-vermelho{
+    background-color: rgb(255, 102, 102);
+    color: black;
+}
+
+.canel.cor-vermelho article.menu-desc p, .canel.cor-vermelho article.menu-comprar p, .carrossel-menu.cor-vermelho a{
+    background-color: white;
+}
+
+.canel.cor-vermelho .menu-desc p, .canel.cor-vermelho .menu-comprar p, .imagem.cor-vermelho{
+    border: 2.5px solid black;
+}
+
+
+/* verde */
+
+.canel.cor-verde article, .carrossel-menu.cor-verde{
+    background-color: rgb(102, 255, 189);
+    color: black;
+}
+
+.canel.cor-verde article.menu-desc p, .canel.cor-verde article.menu-comprar p, .carrossel-menu.cor-verde a{
+    background-color: white;
+}
+
+.canel.cor-verde .menu-desc p, .canel.cor-verde .menu-comprar p, .imagem.cor-verde{
+    border: 2.5px solid black;
+}
+
+/* cinza */
+
+.canel.cor-cinza article, .carrossel-menu.cor-cinza{
+    background-color: rgb(136, 136, 136);
+    color: black;
+}
+
+
+
+.canel.cor-cinza article.menu-desc p, .canel.cor-cinza article.menu-comprar p, .carrossel-menu.cor-cinza a{
+    background-color: white;
+}
+
+.canel.cor-cinza .menu-desc p, .canel.cor-cinza .menu-comprar p, .imagem.cor-cinza{
+    border: 2.5px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+details:not([open]){
+    padding: 10px;
+    width: 65%;
+    border-radius: 20px;
+    margin: 20px auto;
+
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+details[open]{
+    width: 100%;
+    border-radius: 20px;
+    margin: 50px auto;
+    
+    font-size: 1.3em;
+    border-top: none;
+}
+
+details[open] summary p{
+    display: none;
+}
+
+details:not([open]) summary{
+    list-style-type: none;
+}
+
+details:not([open]) summary:after{
+    
+}
+
+details[open] summary{
+    list-style-type: none;
+    text-indent: 20px;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 471px) and (max-width: 768px) {
+
+    .container-carrossel{
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .container-carrossel {
+        margin: 20px auto;
+        max-width: 354px;
+    }
+
+    .details-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    main{
+        padding: 35px;
+        margin: 5px auto 20px auto;
+        border-radius: 20px;
+    }
+
+    .container-carrossel {
+        margin: 20px auto;
+        max-width: 400px;
+    }
+
+    details[open]{
+        border: 1px solid black;
+        border-top: none;
+    }
+}
